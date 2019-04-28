@@ -73,8 +73,10 @@ run_analysis<-function(){
     data_tidy_avg<<-data_subset_tidy_avg  #Send to workspace
     print("**Average of 'data_subset_tidy' created as 'data_subset_tidy_avg'")
     #Step 6:Save data
-    print("saving 'data_tidy' and 'data_tidy_avg' in CSV format")
+    print("saving 'data_tidy' and 'data_tidy_avg' in CSV and TXT formats")
     write.csv(data_subset_tidy, file = "analysis/data_tidy.csv",row.names = FALSE)
     write.csv(data_subset_tidy_avg, file = "analysis/data_tidy_avg.csv",row.names = FALSE)
+    write.table(data_tidy,"analysis/data_tidy.txt", row.names = FALSE)
+    write.table(data_tidy_avg,"analysis/data_tidy_avg.txt", row.names = FALSE)
 }
     
