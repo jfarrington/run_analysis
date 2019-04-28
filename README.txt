@@ -2,9 +2,9 @@ run_analysis.R
 ==============================================
 DESCRIPTION:
 
-This function extracts the training and test datasets producing a tidy dataset
-with the mean and std measurements. This dataset is then used to form an independent 
-dataset with the averages of all the values.
+This function extracts the training and test datasets from the "Human Activity Recognition Using 
+Smartphones Dataset Version 1.0" producing a tidy dataset with the mean and std measurements. 
+This dataset is then used to form an independent dataset with the averages of all the values.
 NOTE:Requires dplyr and plyr libraries
 
 ==============================================
